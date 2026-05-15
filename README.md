@@ -32,7 +32,7 @@ It supports:
 - Azure Blob Storage — Stores file content  
 - Docker Compose — Local development environment  
 - GitHub Actions — CI/CD pipeline  
-- Azure App Service — Deployment target  
+- Azure App Service — Deployment target.  
 
 ---
 
