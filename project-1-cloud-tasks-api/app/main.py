@@ -14,4 +14,4 @@ app.include_router(tasks.router)
 # Root endpoint
 @app.get("/")
 def root():
-    return {"message": "Cloud Tasks API is running"}
+    return {"message": "Cloud Tasks API is running!"}
