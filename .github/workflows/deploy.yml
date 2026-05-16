@@ -1,0 +1,54 @@
+name: build-and-deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Log in to Azure (force service principal)
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+          enable-AzPSSession: false
+          allow-no-subscriptions: true
+          auth-type: service_principal
+
+      - name: Force Azure CLI login manually
+        run: |
+          az login --service-principal \
+            -u ${{ fromJson(secrets.AZURE_CREDENTIALS).clientId }} \
+            -p ${{ fromJson(secrets.AZURE_CREDENTIALS).clientSecret }} \
+            --tenant ${{ fromJson(secrets.AZURE_CREDENTIALS).tenantId }}
+
+      - name: Azure CLI - Set subscription
+        run: |
+          az account set --subscription ${{ fromJson(secrets.AZURE_CREDENTIALS).subscriptionId }}
+
+      - name: Log in to Azure Container Registry
+        run: |
+          az acr login --name ${{ secrets.ACR_NAME }}
+
+      - name: Build Docker image
+        working-directory: ${{ github.workspace }}/project-2-file-storage-api
+        run: |
+          docker build -t ${{ secrets.ACR_NAME }}.azurecr.io/project2-api:latest .
+
+      - name: Push Docker image
+        working-directory: ${{ github.workspace }}/project-2-file-storage-api
+        run: |
+          docker push ${{ secrets.ACR_NAME }}.azurecr.io/project2-api:latest
+
+      - name: Deploy to Azure Container Apps
+        run: |
+          az containerapp update \
+            --name ${{ secrets.ACA_NAME }} \
+            --resource-group ${{ secrets.AZURE_RG }} \
+            --image ${{ secrets.ACR_NAME }}.azurecr.io/project2-api:latest
