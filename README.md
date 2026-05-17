@@ -1,4 +1,30 @@
 # **Cloud Learning Roadmap — 5 Project Portfolio**  
+<p align="left">
+
+  <!-- Python -->
+  <img src="https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python&logoColor=white" />
+
+  <!-- FastAPI -->
+  <img src="https://img.shields.io/badge/FastAPI-Cloud%20Backend-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
+
+  <!-- Docker -->
+  <img src="https://img.shields.io/badge/Docker-Containerized-0db7ed?style=for-the-badge&logo=docker&logoColor=white" />
+
+  <!-- Azure -->
+  <img src="https://img.shields.io/badge/Azure-Cloud%20Deployment-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
+
+  <!-- PostgreSQL -->
+  <img src="https://img.shields.io/badge/PostgreSQL-Database-336791?style=for-the-badge&logo=postgresql&logoColor=white" />
+
+  <!-- Terraform -->
+  <img src="https://img.shields.io/badge/Terraform-IaC-7B42BC?style=for-the-badge&logo=terraform&logoColor=white" />
+
+  <!-- GitHub Actions -->
+  <img src="https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" />
+
+</p>
+
+
 FastAPI • Docker • PostgreSQL • Azure • Terraform • GitHub Actions
 
 This repository documents my journey to becoming a **Cloud Backend Engineer**, following a structured 5‑project roadmap focused on:
