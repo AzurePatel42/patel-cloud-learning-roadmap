@@ -22,9 +22,7 @@
   <!-- GitHub Actions -->
   <img src="https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" />
 
-</p>
-
-# 🧭 Cloud Backend Engineering Platform
+  # 🧭 Cloud Backend Engineering Platform
 
 A structured portfolio of production-style backend systems built using FastAPI, Docker, PostgreSQL, and Azure.
 
@@ -32,9 +30,7 @@ This repository serves as the **system index and architecture map** for a distri
 
 ---
 
-## 🧠 System Philosophy
-
-This portfolio is built around one principle:
+# 🧠 System Philosophy
 
 > Build backend systems, not isolated projects.
 
@@ -42,7 +38,7 @@ Each repository represents a modular service in a larger cloud-native architectu
 
 ---
 
-## 🏗️ System Architecture Overview
+# 🏗️ System Architecture Overview
 
 
 API Services
@@ -58,60 +54,60 @@ Cost & Optimization Systems
 
 ---
 
-## 🚀 Core System Modules
-
-### 🟦 1. Cloud Application Layer
-- patel-cloud-tasks-api
-- patel-file-storage-api
-- patel-inventory-api
+# 🚀 Core System Modules
 
 ---
 
-### 🟩 2. Authentication & Security Systems
-- patel-auth-service-framework
-- patel-auth-user-mgmt *(legacy / evolving)*
+## 🟦 Cloud Application Layer
+- patel-cloud-tasks-api  
+- patel-file-storage-api  
+- patel-inventory-api  
 
 ---
 
-### 🟨 3. Data & AI Systems
-- patel-data-ingestion-pipeline
-- patel-retrieval-service
-- patel-rag-pipeline *(legacy)*
+## 🟩 Authentication & Security Systems
+- patel-auth-service-framework  
+- patel-auth-user-mgmt *(evolving system)*  
 
 ---
 
-### 🟥 4. Cloud Intelligence Systems
-- cost-optimization-engine → patel-cost-intelligence (evolution)
+## 🟨 Data & AI Systems
+- patel-data-ingestion-pipeline  
+- patel-retrieval-service  
+- patel-rag-pipeline *(transition system)*  
 
 ---
 
-## 🧱 System Design Stack
+## 🟥 Cloud Intelligence Systems
+- cost-optimization-engine → patel-cost-intelligence *(evolution in progress)*  
+
+---
+
+# 🧱 System Design Stack
 
 Across all systems:
 
-- FastAPI (backend services)
-- PostgreSQL (data layer)
-- Redis (caching / future event systems)
-- Docker (containerization)
-- Azure (deployment & hosting)
-- Terraform (infrastructure as code - planned)
-- GitHub Actions (CI/CD - planned)
+- FastAPI → backend service layer  
+- PostgreSQL → primary data storage  
+- Redis → caching / event-driven expansion  
+- Docker → containerization  
+- Azure → deployment & hosting  
+- Terraform → infrastructure design (planned)  
+- GitHub Actions → CI/CD pipeline (planned)  
 
 ---
 
-## 🎯 What This Portfolio Demonstrates
+# 🎯 What This Portfolio Demonstrates
 
-- Backend system design (not just APIs)
-- Microservice-style thinking
-- AI + retrieval system architecture
-- Cloud-native deployment understanding
-- Evolution of systems over time
+- Backend system architecture design  
+- Microservice-style thinking  
+- AI + retrieval system engineering  
+- Cloud-native application design  
+- Evolution of systems over time  
 
 ---
 
-## 🔄 System Evolution Model
-
-This portfolio follows an evolution pattern:
+# 🔄 System Evolution Model
 
 
 Simple API → Modular Service → Distributed System → Intelligent Backend System
@@ -119,27 +115,28 @@ Simple API → Modular Service → Distributed System → Intelligent Backend Sy
 
 ---
 
-## 📌 Repository Role
+# 📌 Repository Role
 
 This repository is NOT a codebase.
 
-It serves as:
-- System index
-- Architecture documentation
-- Portfolio navigation layer
-- Project relationship map
+It functions as:
+
+- System index  
+- Architecture map  
+- Portfolio navigation layer  
+- Project relationship graph  
 
 ---
 
-## 🚀 Long-Term Direction
+# 🚀 Long-Term Direction
 
-This ecosystem is designed for:
+Designed for:
 
-- Cloud Backend Engineering roles
-- AI backend systems
-- Distributed system architecture
-- Azure-based production systems
-- Scalable API platforms
+- Cloud Backend Engineering roles  
+- AI backend systems  
+- Distributed system architecture  
+- Azure-based production systems  
+- Scalable API platforms  
 
-
+</p>
 
